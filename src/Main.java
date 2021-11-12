@@ -3,8 +3,9 @@ import exercicio2.Agenda;
 import exercicio3.Elevador;
 import exercicio4.ControleRemoto;
 import exercicio4.Televisao;
+import exercicio5.Caminhao;
+import exercicio5.ControleCaminhao;
 
-import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -33,12 +34,12 @@ public class Main {
         System.out.println("EXERCÍCIO 2:");
         Agenda agenda = new Agenda();
 
-            for (int indice = 0; indice <10; indice++){
-                String nome = "Pessoa " + (indice + 1);
-                int idade = 20;
-                float altura = (float) 1.79;
-                agenda.armazenaPessoa(nome, idade, altura);
-            }
+        for (int indice = 0; indice < 10; indice++) {
+            String nome = "Pessoa " + (indice + 1);
+            int idade = 20;
+            float altura = (float) 1.79;
+            agenda.armazenaPessoa(nome, idade, altura);
+        }
 
         agenda.imprimeAgenda();
         System.out.println("Posição da pessoa pesquisada na agenda: " + agenda.buscaPessoa("Pessoa 2"));
@@ -61,7 +62,7 @@ public class Main {
         System.out.println("Pessoas no elevador: " + elevador.getLotacao());
         System.out.println("");
 
-        for (int indice = 0; indice < 5; indice++){
+        for (int indice = 0; indice < 5; indice++) {
             elevador.entra();
         }
         System.out.println("Pessoas no elevador: " + elevador.getLotacao());
@@ -69,13 +70,13 @@ public class Main {
         elevador.sai();
         System.out.println("Pessoas no elevador: " + elevador.getLotacao());
 
-        for (int indice = 0; indice < 6; indice++){
+        for (int indice = 0; indice < 6; indice++) {
             elevador.sobe();
         }
         System.out.println("Andar atual: " + elevador.getAndarAtual() + "º.");
 
 
-        for (int indice = 0; indice < 6; indice++){
+        for (int indice = 0; indice < 6; indice++) {
             elevador.desce();
         }
         System.out.println("Andar atual: " + elevador.getAndarAtual() + "º.");
@@ -104,6 +105,17 @@ public class Main {
 
         System.out.println("Volume atual da televisão: " + televisao.getVolumeAtual()); //Para consultar o volume de som.
         System.out.println("Canal atual da televisão: " + televisao.getCanalAtual());// Para consultar o canal selecionado.
+
+
+    //--EXERCÍCIO 5:----------------------------------------------------------------------------------------------
+        System.out.println("");
+        System.out.println("EXERCÍCIO 5:");
+
+        ControleCaminhao controleCaminhao = new ControleCaminhao();
+        controleCaminhao.carregarCaminhao();
+
+
+
 
     }
 }
