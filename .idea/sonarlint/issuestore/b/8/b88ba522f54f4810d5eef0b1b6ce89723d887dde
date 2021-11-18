@@ -1,0 +1,17 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¯©™İ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(üï÷Šøÿÿÿÿ
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(ÍÈˆ
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(’«Å§üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’«Å§üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’«Å§üÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(­Œª€øÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(­Œª€øÿÿÿÿ
+d
+java:S1192"NDefine a constant instead of duplicating this literal "Andar atual: " 3 times.(¯©™İ
+q
+java:S1192
+"VDefine a constant instead of duplicating this literal "Pessoas no elevador: " 3 times.(’«Å§üÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ü¼‰Õ
