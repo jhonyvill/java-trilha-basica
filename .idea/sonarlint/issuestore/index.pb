@@ -1,8 +1,4 @@
 
-L
-src/exercicio3/Elevador.java,4\a\4a9e2d6746a2ff195099b467f2b52389e86a08c1
-H
-src/exercicio3/Main.java,b\8\b88ba522f54f4810d5eef0b1b6ce89723d887dde
 R
 "src/exercicio4/ControleRemoto.java,3\a\3a38d015caab0abf6a5d6dc0732565b722cb34c8
 H

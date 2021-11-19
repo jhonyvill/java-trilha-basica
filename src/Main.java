@@ -1,13 +1,11 @@
 import exercicio1.Person;
 import exercicio2.Agenda;
-import exercicio3.Elevador;
+import exercicio3.Elevator;
 import exercicio4.ControleRemoto;
 import exercicio4.Televisao;
-import exercicio5.Caminhao;
 import exercicio5.ControleCaminhao;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 
 
@@ -41,32 +39,29 @@ public class Main {
     //--EXERCÍCIO 3:----------------------------------------------------------------------------------------------
         System.out.println("EXERCÍCIO 3:");
 
-        Elevador elevador = new Elevador();
-        elevador.inicializa(4, 5);
-        System.out.println("Andar atual: " + elevador.getAndarAtual());
-        System.out.println("Total de andares: " + elevador.getTotalAndares());
-        System.out.println("Capacidade máxima: " + elevador.getCapacidade());
-        System.out.println("Pessoas no elevador: " + elevador.getLotacao());
+        Elevator elevator = new Elevator();
+        elevator.start(4, 5);
+        System.out.println(elevator.toString());
         System.out.println("");
 
-        for (int indice = 0; indice < 5; indice++) {
-            elevador.entra();
+        for (int index = 0; index < 5; index++) {
+            elevator.enterPerson();
         }
-        System.out.println("Pessoas no elevador: " + elevador.getLotacao());
+        System.out.println("Pessoas no elevador: " + elevator.getPeopleInside());
 
-        elevador.sai();
-        System.out.println("Pessoas no elevador: " + elevador.getLotacao());
+        elevator.goOutPerson();
+        System.out.println("Pessoas no elevador: " + elevator.getPeopleInside());
 
-        for (int indice = 0; indice < 6; indice++) {
-            elevador.sobe();
+        for (int index = 0; index < 6; index++) {
+            elevator.goUp();
         }
-        System.out.println("Andar atual: " + elevador.getAndarAtual() + "º.");
+        System.out.println("Andar atual: " + elevator.getCurrentFlor() + "º.");
 
 
-        for (int indice = 0; indice < 6; indice++) {
-            elevador.desce();
+        for (int index = 0; index < 6; index++) {
+            elevator.goDown();
         }
-        System.out.println("Andar atual: " + elevador.getAndarAtual() + "º.");
+        System.out.println("Andar atual: " + elevator.getCurrentFlor() + "º.");
 
     //--EXERCÍCIO 4:----------------------------------------------------------------------------------------------
         System.out.println("");
