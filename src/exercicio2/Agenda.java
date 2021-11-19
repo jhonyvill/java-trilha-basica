@@ -5,55 +5,51 @@ import java.util.List;
 
 public class Agenda {
 
-    List<PessoaAgenda> listaPessoas = new ArrayList<PessoaAgenda>(10);
+    private final List<AgendaPerson> people = new ArrayList<>(10);
 
-    public void armazenaPessoa(String nome, int idade, float altura){
-            PessoaAgenda pessoaAgenda = new PessoaAgenda();
-            pessoaAgenda.setNome(nome);
-            pessoaAgenda.setIdade(idade);
-            pessoaAgenda.setAltura(altura);
-            listaPessoas.add(pessoaAgenda);
-    };
+    public void savePerson(String name, int age, float height) {
+        AgendaPerson agendaPerson = new AgendaPerson(name, age, height);
+        people.add(agendaPerson);
+    }
 
-    public void removePessoa(String nome){
-        for (PessoaAgenda pessoaAgenda: listaPessoas) {
-            if(pessoaAgenda.getNome().contains(nome)){
-                listaPessoas.remove(pessoaAgenda);
-                break;
-            }
+    public void deletePerson(String name) {
+        int index = personSearch(name);
+        if (index > -1) {
+            people.remove(index);
+        } else {
+            System.out.println("Pessoa não encontrada");
         }
     }
 
-    public int buscaPessoa(String nome){
-        for (PessoaAgenda pessoaAgenda: listaPessoas) {
-            if (pessoaAgenda.getNome().contains(nome)){
-                return listaPessoas.indexOf(pessoaAgenda) + 1;
+    public int personSearch(String name) {
+        int index = 0;
+        for (AgendaPerson agendaPerson : people) {
+            if (agendaPerson.getName().equalsIgnoreCase(name)) {
+                return index;
             }
+            index++;
         }
         return -1;
-    };//informa em que posição da agenda está a pessoa.
+    }
 
-    public void imprimeAgenda(){
-            System.out.println("Lista de contatos da agenda:");
-            int tamanhoLista = listaPessoas.size();
-            for (int indice = 0; indice < tamanhoLista; indice++){
-                System.out.println((indice + 1) +"º contato da agenda:");
-                System.out.println("Nome: " + listaPessoas.get(indice).getNome());
-                System.out.println("Idade: " + listaPessoas.get(indice).getIdade());
-                System.out.println("Altura: " + listaPessoas.get(indice).getAltura());
-                System.out.println("");
-            }
-    };// imprime os dados de todas as pessoas da agenda.
+    public void printAgenda() {
+        System.out.println("Lista de contatos da agenda:");
 
-    public void imprimePessoa(int index){
-        if (index < 0){
-            System.out.println("Opção inválida.");
-        }else{
-            System.out.println("Dados do " + (index + 1) + "º contato da agenda:"); //somado 1 ao index para retornar a posição na agenda, tendo em vista que em uma agenda a contagem começa do 1, diferente da contagem de index.
-            System.out.println("Nome: " + listaPessoas.get(index).getNome());
-            System.out.println("Idade: " + listaPessoas.get(index).getIdade());
-            System.out.println("Altura: " + listaPessoas.get(index).getAltura());
+        for (int index = 0; index < people.size(); index++) {
+            System.out.println((index + 1) + "º contato da agenda:");
+            System.out.println(people.get(index).toString());
+            System.out.println("");
         }
-    }; // imprime os dados da pessoa que está na posição “i” da agenda.
+    }// imprime os dados de todas as pessoas da agenda.
+
+    public void searchPersonForIndex(int index) {
+        if (index < 0) {
+            System.out.println("Opção inválida.");
+        } else {
+            System.out.println("Pessoa do índice pesquisado:");
+            System.out.println(people.get(index).toString());
+            System.out.println("");
+        }
+    }// imprime os dados da pessoa que está na posição “i” da agenda.
 
 }

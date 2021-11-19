@@ -1,23 +1,0 @@
-
-7
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
-7
-java:S1116""Remove this empty statement.(ü”²èüÿÿÿÿ
-S	java:S106%"9Replace this use of System.out or System.err by a logger.(‘Ã¼Üúÿÿÿÿ
-N	java:S106("9Replace this use of System.out or System.err by a logger.(ùÛªó
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(´åÉ„øÿÿÿÿ
-N	java:S106*"9Replace this use of System.out or System.err by a logger.(¸æÃ‚
-N	java:S106+"9Replace this use of System.out or System.err by a logger.(Óæ…‘
-S	java:S106,"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
-2
-java:S1116."Remove this empty statement.(êÃî£
-S	java:S1062"9Replace this use of System.out or System.err by a logger.(òç„‚øÿÿÿÿ
-N	java:S1064"9Replace this use of System.out or System.err by a logger.(‚òçå
-N	java:S1065"9Replace this use of System.out or System.err by a logger.(ÀÀÑ
-S	java:S1066"9Replace this use of System.out or System.err by a logger.(ÈÓ»‡şÿÿÿÿ
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(ŸôÕû
-1
-java:S11169"Remove this empty statement.(âÈ«=
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‡‚Ğ¡ıÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´†›Êüÿÿÿÿ

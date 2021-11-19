@@ -1,10 +1,4 @@
 
-J
-src/exercicio2/Agenda.java,7\c\7ca3ac470ce142308142a56c5aa26b00eba8a1cc
-P
- src/exercicio2/PessoaAgenda.java,d\8\d85be974ebdbc0a754c6520e9834b32750d0189f
-H
-src/exercicio2/Main.java,3\f\3fea6efbb5d9988dcd104e7200293bca3b7ee87d
 L
 src/exercicio3/Elevador.java,4\a\4a9e2d6746a2ff195099b467f2b52389e86a08c1
 H
